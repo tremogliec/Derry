@@ -3,13 +3,8 @@
 <div class="slant"></div>
 <div class="header-info cf">
     <div class="container">
-        <div class="grid-3">
-            <h1 class="home">Welcome to Derry Township,</h1>
-            <p>Best known for world famous HERSHEY’S Milk Chocolate, Hershey thrives today on what began as a vision of Milton S. Hershey to build a model town to meet the basic, recreational, and cultural needs of the factory workers. His values live on and are embraced by the elected officials, residents and business owners of this great community. There is a pride that comes with saying, “I live in Hershey.”</p>
-        </div>
-        <div class="grid-3 bottom-box">
-            <h3>Hershey Gardens</h3>
-            <img src="images/header-home-img.jpg">
+        <div>
+            <h1>History</h1>
         </div>
     </div>
 </div>

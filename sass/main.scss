@@ -40,7 +40,7 @@ img {
 /////////////////////////////////////////////////*/
 $blue:#003a66;
 $gold:#fdce07;
-$light-blue:#fdce07;
+$light-blue:#7aa5c6;
 $light-grey: #f0f0f0;
 $grey:#e5e5e5;
 $dark-grey:#808080;
@@ -224,6 +224,10 @@ h1.home {
 	font-size: em(38);
 }
 
+.full-wrapper {
+	background-color: $grey;
+}
+
 .side-bar {
 	background-color: $grey;
 	padding: 40px 10px 20px 10px;
@@ -373,6 +377,140 @@ h1.home {
 		span:last-child {
 			margin-bottom: 0;
 		}
+	}
+}
+
+.main-content {
+	padding: 40px 0;
+	background-color: white;
+
+		h3 {
+		padding: 10px 0;
+		background-color: $light-grey;
+		font-weight: normal;
+		text-align: center;
+		margin: 20px 0;
+		font-size: em(32);
+		font-weight: bold;
+	}
+
+	.more-news {
+				padding: 10px 0;
+		background-color: $light-grey;
+		font-weight: normal;
+		text-align: center;
+		margin: 20px 0;
+		font-size: em(32);
+		font-weight: bold;
+		width: 100%;
+		font-family: $font-header;
+		color: $blue;
+		display: block;
+	}
+
+	.more-news:hover {
+		background-color: $blue;
+		color: white;
+	}
+}
+
+.update {
+	background-color: $light-blue;
+	text-align: center;
+			padding: 10px 0;
+	span {
+		color: $blue;
+		font-family: $font-body;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	p {
+		display: inline-block;
+		color: white;
+		font-family: $font-body;
+		margin-left: 10px;
+	}
+}
+
+.blog-container:first-child {
+	padding: 20px 0 40px;
+}
+
+.blog-container {
+	padding: 40px 0 40px;
+		border-bottom: 1px solid $dark-grey;
+
+	.title {
+		font-family: $font-header;
+		font-size: em(32);
+		color: $blue;
+		display: inline-block;
+		font-weight: bold;
+	}
+
+	div {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	div:first-child {
+		width: 20%;
+	}
+
+	div:last-child {
+		width: 79.5%;
+	}
+
+	span.date {
+		font-family: $font-header;
+		color: $dark-grey;
+		font-size: em(18);
+		font-weight: bold;
+	}
+
+	p {
+		font-size: em(18);
+		margin: 20px 0;
+	}
+
+	.read-more {
+		color: $black;
+		font-size: em(18);
+		font-family: $font-header;
+		border-bottom: 2px solid white;
+
+		img {
+			width: 20px;
+			height: 19px;
+			padding-left: 5px;
+		}
+	}
+
+	.read-more:hover {
+		border-bottom: 2px solid $gold;
+	}
+
+}
+
+.blog-container:last-child {
+	border-bottom: none;
+}
+
+footer {
+	background-color: $blue;
+	padding: 30px;
+	border-top: 10px solid $gold;
+
+	span {
+		color: white;
+		font-family: $font-header;
+		font-weight: bold;
+		font-style: italic;
+		font-size: em(32);
+	} 
+
+	p {
+		color: white;
 	}
 }
 
