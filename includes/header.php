@@ -52,7 +52,7 @@
 
 <div class="header-container cf">
     <div class="container">
-        <div class="grid-2 logo no-margin"><img src="images/Derry-Township-Logo.png" alt="Derry Township Hershey PA"></div>
+        <div class="grid-2 logo no-margin"><a href=""><img src="images/Derry-Township-Logo.png" alt="Derry Township Hershey PA"></a></div>
         <div class="grid-3 header no-margin"><h2 class="main-title">Hershey... Where It's Just Sweeter</h2><span>We can't think of a better place to call home</span></div>
         <div class="grid-1 social no-margin">
             <a href=""><i class="facebook fa fa-facebook fa-lg"></i></a>
