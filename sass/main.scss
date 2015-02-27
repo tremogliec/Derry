@@ -53,7 +53,6 @@ $facebook-blue: #3b579d;
 $section-margin: 40px;
 $side-bar-margin:60px;
 
-
 $font-header:'Alegreya', serif;
 $font-body: 'Lato', sans-serif;
 
@@ -96,7 +95,10 @@ a {
 
 .navigation-container {
 	border-top: 4px solid $gold;
-	position: relative;
+	position: fixed;
+z-index: 20;
+width: 100%;
+background-color: white;
 	border-bottom: 2px solid $grey;
 }
 
@@ -113,8 +115,7 @@ nav {
 	}
 
 	a:hover {
-		border-bottom: 2px solid $gold;
-		color: $gold;
+		border-bottom: 2px solid $blue;
 	}
 
 	.circle {
@@ -125,22 +126,200 @@ nav {
 		display: inline-block;
 		text-align: center;
 	}
+
 }
 
+.search {
+	display: inline-block;
+	position: relative;
+margin-left: 10px;
+padding: 4px 4px 6px 4px;
+background-color: $grey;
+
+form {
+	position: relative;
+}
+	input {
+		border: none;
+		color: #808080;
+		background-color: $grey;
+		font-family: $font-header;
+		font-weight: bold;
+		font-size: em(22);
+
+		@media screen and (max-width:1184px) {
+			width: 125px;
+		}
+	}
+
+	svg {
+		width: 27px;
+		height: auto;
+		fill: #808080;
+	}
+
+	button {
+		position: absolute;
+top: -2px;
+right: 0px;
+background-color: #E5E5E5;
+height: 43px;
+	}
+}
+
+	.dropdown {
+		position: absolute;
+		top: 43px;
+		background-color: white;
+		z-index: 3;
+		padding: 10px 30px;
+		@include transition(all 0.3s ease-in-out);
+		visibility: hidden;
+		opacity: 0;
+		> div {
+			text-align: left;
+		}
+
+		li {
+
+			 a {
+			 	font-size: 1.25em;
+			 	color: $black;
+			 	font-weight: bold;
+			 	font-family: $font-header;
+			 	padding:0 0 2px 0;
+			 }
+
+			 a:last-child {
+			 	padding-bottom: 0;
+			 }
+		}
+
+		span {
+			text-align: left;
+			font-family: $font-header;
+			font-weight: bold;
+			font-size: em(30px);
+			font-style: italic;
+			padding-bottom: 7px;
+			display: inline-block;
+		}
+	}
+
+	.government {
+		width: 950px;
+		left: -60%;
+
+		@media screen and (max-width:1219px) {
+			left: -100%;
+		}
+
+		@media screen and (max-width:1110px) {
+			left: -225px;
+		}
+
+		@media screen and (max-width:976px) {
+			width: 850px;
+			left: -200px;
+		}
+
+		@media screen and (max-width:864px) {
+			    width: 700px;
+    left: -150px;
+		}
+	}
+
+	.community {
+		width: 300px;
+		left: -10%;
+	}
+
+	.resident {
+		right: -100%;
+		width: 783px;
+		@media screen and (max-width:875px) {
+			right: -100px;
+			width: 640px;
+		}
+	}
+
+	.departments {
+		left: -10%;
+	}
+
+	.business {
+		width: 350px;
+left: -50%;
+
+@media screen and (max-width:999px) {
+	left: -170px;
+}
+	}
+
+	.resource {
+		width: 250px;
+right: -50%;
+
+@media screen and (max-width:863px) {
+	right: 0;
+}
+	}
+
+	.dropdown-container {
+		display: inline-block;
+		position: relative;
+	}
+
+	.dropdown-container:hover {
+		.dropdown {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.dropdown-link a {
+			border-bottom: 2px solid $blue;
+		}
+	}
+
+
+		ul.large-sub {
+			margin-bottom: 40px;
+
+			li {
+				a {
+					font-size: em(30px);
+					color: $black;
+					font-style: italic;
+					font-weight: bold;
+				}
+			}
+		}
+
 .header-container {
-	padding-top: $section-margin;
+	padding-top: 65px;
 	background: url('../images/slant.svg') no-repeat;
 	z-index: 2;
 	position: relative;
 	background-size: 100% 100%;
-
+		
+		@media screen and (max-width:914px) {
+			padding-top: 30px;
+		}
 	.logo {
 		width: 20%;
+
+		@media screen and (max-width:659px) {
+			width: 40%;
+		}
 	}
 
 	.header {
 		text-align: center;
 		width: 63%;
+
+		@media screen and (max-width:796px) {
+			width: 75%;
+		}
 	}
 
 	h2 {
@@ -150,7 +329,12 @@ nav {
 		text-align: center;
 		font-weight: 900;
 		text-transform: uppercase;
-		margin-top: $section-margin + 5px;
+		margin-top: 23px;
+		
+		@media screen and (max-width:914px) {
+			margin-top: 0;
+		}
+
 	}
 
 	span {
@@ -165,6 +349,7 @@ nav {
 	.social {
 		float: right;
 		margin-top: 30px;
+		text-align: right;
 
 		.facebook {
 			background-color: $facebook-blue;
@@ -187,6 +372,20 @@ nav {
 			line-height: 1.5em;
 		}
 	}
+
+	.grid-2 {
+		@media screen and (max-width:659px) {
+			width: 100%;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+	}
+
+	.grid-3 {
+		@media screen and (max-width:659px) {
+			width: 100%;
+		}
+	}
 }
 
 
@@ -195,6 +394,11 @@ nav {
 	padding: 140px 0 0 0;
 	z-index: 1;
 	margin-top: -90px;
+	position: relative;
+
+	@media screen and (max-width:1033px) {
+		margin-top: -125px;
+	}
 
 	p {
 		color: white;
@@ -205,6 +409,10 @@ nav {
 	.home {
 		margin: $section-margin 0;
 		position: relative;
+		
+		@media screen and (max-width:744px) {
+			margin-top: 0;
+		}
 	}
 
 	.home:after {
@@ -226,6 +434,19 @@ nav {
 
 	.grid-3 {
 		margin-bottom: 0;
+	}
+
+	.bottom-box {
+				@media screen and (max-width:1033px) {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		@media screen and (max-width:600px) {
+			position: relative;
+			margin-top: 20px;
+		}
 	}
 }
 
@@ -274,7 +495,7 @@ h1.home {
 			a {
 				color: $blue;
 				font-family: $font-header;
-				padding: 10px;
+				padding: 10px 20px 10px 10px;
 				display: block;
 				font-size: em(24);
 				font-weight: bold;
@@ -288,7 +509,7 @@ h1.home {
 
 			a:hover {
 				background-color: $blue;
-				color: $gold;
+				color: white;
 			}
 		}
 	}
@@ -416,6 +637,28 @@ h1.home {
 		margin: 20px 0;
 	}
 
+	h2 {
+			color: white;
+	background-color: $blue;
+	text-align: center;
+	padding:10px;
+	width: 100%;
+max-width: 900px;
+margin: 0 auto;
+	}
+
+	.page-image {
+		border: 2px solid $blue;
+		width: auto;
+		max-height: 600px;
+		max-width: 900px;
+		margin: 0 auto;
+		img {
+		height: auto;
+		max-height: 600px;
+		}
+	}
+
 	span {
 		font-family: $font-header;
 		color: $blue;
@@ -465,6 +708,7 @@ h1.home {
 	background-color: $light-blue;
 	text-align: center;
 			padding: 10px 0;
+			margin-bottom: 20px;
 	span {
 		color: $blue;
 		font-family: $font-body;
@@ -516,13 +760,6 @@ h1.home {
 		}
 	}
 
-	span.date {
-		font-family: $font-header;
-		color: $dark-grey;
-		font-size: em(18);
-		font-weight: bold;
-	}
-
 	p {
 		font-size: em(18);
 		margin: 20px 0;
@@ -550,6 +787,13 @@ h1.home {
 			padding-top: 0px;
 		}
 
+span.date {
+	font-family: $font-header;
+	color: $dark-grey;
+	font-size: em(18);
+	font-weight: bold;
+	display: block;
+}
 
 .blog-container:last-child {
 	border-bottom: none;
@@ -571,6 +815,20 @@ footer {
 	p {
 		color: white;
 	}
+
+ul.large-sub {
+	li {
+		list-style-type: none;
+		a {
+			color: white;
+			font-family: $font-header;
+		}
+
+		:hover {
+			color: $gold;
+		}
+	}
+}
 }
 
 
@@ -581,7 +839,11 @@ footer {
 	li {
 		display: block;
 		width: 70%;
-		margin-bottom: 10px
+		margin-bottom: 10px;
+
+		@media screen and (max-width:1034px) {
+			width: 100%;
+		}
 	}
 
 	li:last-child {
@@ -613,11 +875,50 @@ footer {
 	}
 }
 
+.cta-box {
+	background-color: $light-grey;
+	padding: 10px 20px;
+	margin: 40px 0;
+
+	h2 {
+		background-color: $light-grey;
+		color: $blue;
+		font-style: normal;
+		font-size: em(32);
+		padding: 0;
+		text-align: left;
+	}
+
+	p {
+		color: $dark-grey;
+	}
+}
+
+span.sub {
+	color: $black;
+	font-size: em(30);
+	font-style: italic;
+	padding: 0;
+	margin: 0;
+}
+
+.sub-top {
+	margin-top: 0;
+}
+
 
 /*!////////////////////////////////////////////////
 // STATES
 /////////////////////////////////////////////////*/
+body {
+	@media screen and (max-width:1017px) {
+		font-size: 90%;
+	}
 
+	@media screen and (max-width:839px) {
+		font-size: 80%;
+	}
+}
 
 
 @import "helpers.scss";

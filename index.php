@@ -1,7 +1,7 @@
 <?php include 'includes/header.php';?>
 
 <div class="header-info cf">
-    <div class="container">
+    <div class="container cf">
         <div class="grid-3">
             <h1 class="home">Welcome to Derry Township,</h1>
             <p>Best known for world famous HERSHEY’S Milk Chocolate, Hershey thrives today on what began as a vision of Milton S. Hershey to build a model town to meet the basic, recreational, and cultural needs of the factory workers. His values live on and are embraced by the elected officials, residents and business owners of this great community. There is a pride that comes with saying, “I live in Hershey.”</p>
@@ -13,70 +13,7 @@
     </div>
 </div>
 <div class="full-wrapper cf">
-<div class="side-bar grid-2 no-margin cf">
-    <div class="container">
-        <ul>
-            <li><a href="">Ordinances & Resolutions<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Minutes & Agendas<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Departments<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Job Opportunities<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Comprehensive Plan<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Newsletter Signup<span class="fa fa-angle-double-right"></span></a></li>
-        </ul>
-    </div>
-
-    <div class="container">
-        <div class="emergency-alert-container">
-            <h2>Emergency Alert Signup</h2>
-            <img src="images/code-red.png" alt="Code Red Keeping Citizens informed">
-            <a href="" class="sign-up">Signup for Code Red<span class="fa fa-angle-double-right"></span></a>
-        </div>
-        <div class="latest-events-container">
-            <h2>Latest Events</h2>
-            <ul>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#">View all events<span class="fa fa-angle-double-right"></span></a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="contact-us-container">
-            <h2>Contact us</h2>
-            <span>600 Clearwater Road</span>
-            <span>Hershey, PA 17033</span>
-            <span>Phone: 717.533.2057</span>
-            <span>Fax: 717.533.7174</span>
-        </div>
-
-    </div>
-
-
-</div>
+<?php include 'includes/side-bar.php';?>
 
 <div class="main-content grid-4 no-margin cf">
     <div class="container">
@@ -122,12 +59,6 @@
     </div>
 </div>
 </div>
-
-<footer class="cf">
-    <div class="footer-images-container">
-        <span>Around Town</span>
-    </div>
-</footer>
 
 
 

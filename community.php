@@ -1,80 +1,22 @@
 <?php include 'includes/header.php';?>
 
-<div class="header-info sub-page-header community-header cf">
+<div class="header-info sub-page-header cf">
     <div class="container">
         <div>
             <h1>History</h1>
         </div>
     </div>
-</div>
+</div>v
 <div class="full-wrapper cf">
-<div class="side-bar grid-2 no-margin cf">
-    <div class="container">
-        <ul>
-            <li><a href="">Ordinances & Resolutions<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Minutes & Agendas<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Departments<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Job Opportunities<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Comprehensive Plan<span class="fa fa-angle-double-right"></span></a></li>
-            <li><a href="">Newsletter Signup<span class="fa fa-angle-double-right"></span></a></li>
-        </ul>
-    </div>
-
-    <div class="container">
-        <div class="emergency-alert-container">
-            <h2>Emergency Alert Signup</h2>
-            <img src="images/code-red.png" alt="Code Red Keeping Citizens informed">
-            <a href="" class="sign-up">Signup for Code Red<span class="fa fa-angle-double-right"></span></a>
-        </div>
-        <div class="latest-events-container">
-            <h2>Latest Events</h2>
-            <ul>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <span>Parks and Recreation Advisory Board</span>
-                    <p>01-14-2015 | 07:00pm</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#">View all events<span class="fa fa-angle-double-right"></span></a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="contact-us-container">
-            <h2>Contact us</h2>
-            <span>600 Clearwater Road</span>
-            <span>Hershey, PA 17033</span>
-            <span>Phone: 717.533.2057</span>
-            <span>Fax: 717.533.7174</span>
-        </div>
-
-    </div>
-
-
-</div>
+<?php include 'includes/side-bar.php';?>
 
 <div class="main-content grid-4 no-margin cf">
     <div class="container">
+
+    <div class="page-image">
+        <img src="images/history-main.jpg" alt="Derry Township History">
+    </div>
+            <h2>The History of Derry Township</h2>
         <p><span class="bold">The Township of Derry was incorporated August 1, 1729, when Lancaster County divided the territory for tax purposes. At that time, the boundaries of Derry Township were much larger and included what are currently three other townships within Lancaster and Dauphin County. The western portion became Derry Township and the eastern portion became Londonderry Township. The first official government in Derry Township was established in 1759. Five officials were elected for one-year terms. The number of elected officials in Derry remains five, however the terms are six years.
 </span></p>
 
@@ -115,14 +57,5 @@
     </div>
 </div>
 </div>
-
-<footer class="cf">
-    <div class="footer-images-container">
-        <span>Around Town</span>
-    </div>
-</footer>
-
-
-
 
 <?php include 'includes/footer.php';?>
