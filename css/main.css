@@ -765,7 +765,7 @@ h1.home {
         background-color: white;
         color: #003a66; }
   .side-bar .contact-us-container {
-    background-color: #003a66;
+    background-color: #531100;
     color: white;
     padding: 20px; }
     .side-bar .contact-us-container h2 {
@@ -839,12 +839,12 @@ h1.home {
     color: white; }
 
 .update {
-  background-color: #7aa5c6;
+  background-color: #531100;
   text-align: center;
   padding: 10px 0;
   margin-bottom: 20px; }
   .update span {
-    color: #003a66;
+    color: #fdce07;
     font-family: "Lato", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -917,9 +917,16 @@ footer {
     font-family: "Alegreya", serif;
     font-weight: bold;
     font-style: italic;
+    width: 100%;
+    display: block;
     font-size: 2em; }
   footer p {
     color: white; }
+  footer .grid-25 {
+    margin-top: 20px; }
+  footer .grid-2 {
+    width: 25.323%;
+    margin-top: 20px; }
   footer ul.large-sub li {
     list-style-type: none; }
     footer ul.large-sub li a {
@@ -927,6 +934,16 @@ footer {
       font-family: "Alegreya", serif; }
     footer ul.large-sub li :hover {
       color: #fdce07; }
+
+.row {
+  display: block;
+  width: 100%; }
+  .row div {
+    display: inline-block;
+    margin-right: 1.5%;
+    margin-bottom: 2%; }
+  .row div:last-child {
+    margin-right: 0; }
 
 .body-menu {
   margin-top: 40px;

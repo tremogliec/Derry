@@ -607,7 +607,7 @@ h1.home {
 	}
 
 	.contact-us-container {
-		background-color: $blue;
+		background-color: #531100;
 		color: white;
 		padding: 20px;
 		h2 {
@@ -705,12 +705,12 @@ margin: 0 auto;
 }
 
 .update {
-	background-color: $light-blue;
+	background-color: #531100;
 	text-align: center;
 			padding: 10px 0;
 			margin-bottom: 20px;
 	span {
-		color: $blue;
+		color: $gold;
 		font-family: $font-body;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -809,11 +809,22 @@ footer {
 		font-family: $font-header;
 		font-weight: bold;
 		font-style: italic;
+		width: 100%;
+		display: block;
 		font-size: em(32);
 	} 
 
 	p {
 		color: white;
+	}
+
+	.grid-25 {
+		margin-top: 20px;
+	}
+
+	.grid-2 {
+		width: 25.323%;
+		margin-top: 20px;
 	}
 
 ul.large-sub {
@@ -830,6 +841,21 @@ ul.large-sub {
 	}
 }
 }
+
+	.row {
+		display: block;
+		width: 100%;
+
+		div {
+			display: inline-block;
+			margin-right: 1.5%;
+			margin-bottom: 2%;
+		}
+
+		div:last-child {
+			margin-right: 0;
+		}
+	}
 
 
 .body-menu {
